@@ -1,0 +1,44 @@
+ <!--Single Product section-->
+ <section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-4"><img class="card-img-top mb-5 mb-md-0" src="{{productdata.productImg}}" alt="..." />
+                <button class="btn flex-shrink-0 mt-4 ms-2" type="button" style="  color: aliceblue; background-color: rgb(255, 171, 14); width: 147px;">
+                    <strong><i class="bi-cart-fill me-1"></i>
+                     Add to cart </strong>
+                 </button>
+                 <button class="btn flex-shrink-0 mt-4" type="button" style="background-color: orangered; width: 147px; margin-left: 67px; color: aliceblue;">
+                    <strong><i class="bi bi-lightning-fill"></i>
+                     By Now</strong>
+                 </button>
+                </div>
+            <div class="col-md-6">
+                <p style="color: gray;">{{productdata.id}}</p>
+                <div class="small mb-1"><h3>{{productdata.description}}</h3></div>
+                <div>
+                    <button class="w2">
+                        <span>{{productdata.rating}}<i class="bi bi-star-fill"></i></span>
+                    </button>
+                    <span class="ms-3" style="color: rgba(128, 128, 128, 0.748); font-size: 14px;"><strong>{{productdata.review}} Reviews</strong></span>
+                </div><br>
+                <p style="color:rgb(6, 166, 6); font-size:15px; margin-top: -16px;">Special Price</p>
+                <div class="mt-1">
+                    <span style="font-size: 29px;">Rs: <strong>{{productdata.price}} /-</strong></span><br>
+                    <br>
+                </div>
+                <p class="lead">{{productdata.productName}}</p>
+                <span> <p style="color:gray; font-size: medium;"> Warrenty: {{productdata.warranty}}yr</p></span>
+                <div class="d-flex ms-6">
+                    <input class="form-control text-center me-3" id="inputQuantity" type="num" style="max-width: 3rem" />
+                    <button class="btn btn-secondary flex-shrink-0 ms-3"  type="button">
+                        <a style="text-decoration: none;" href="product/edit-product/{{productdata.id}}" class="text-white"><i class="bi bi-pencil-square"></i> Edit</a>
+                    </button>
+                    <button class="btn btn-danger flex-shrink-0 ms-3" type="button">
+                        <i class="bi bi-trash"></i>
+                        <a style="text-decoration: none; color: aliceblue;" href="product/delete-product/{{productdata.id}}">Delete</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+<div class="p-5" style="background-color: rgba(159, 157, 157, 0.801);">
+    <div class="container w-50 text-center mt-3 p-2" style="background-color: rgba(51, 51, 249, 0.718); border-radius:3%">
+        <h1 class="text-white">Edit Your Product</h1>
+            <form (ngSubmit)="updateProduct(updateproductform)" #updateproductform="ngForm" action=" ">
+                <input [(ngModel)]="productdata.id" id="pid" name="p1" type="text" class="form-control mt-2 p-2" placeholder="Product ID">
+                <input [(ngModel)]="productdata.productName" id="pname" name="p2" type="text" class="form-control mt-2 p-2" placeholder="Product Name">
+                <input [(ngModel)]="productdata.categoryId" id="cid" name="p3" type="text" class="form-control mt-2 p-2" placeholder="Category ID">
+                <input [(ngModel)]="productdata.description" id="did" name="p4" type="text" class="form-control mt-2 p-2" placeholder="Description">
+                <input [(ngModel)]="productdata.price" id="prid" name="p5"  type="text" class="form-control mt-2 p-2" placeholder="Price">
+                <input [(ngModel)]="productdata.is_available" id="avid" name="p6" type="text" class="form-control mt-2 p-2" placeholder="isAvailable :true/false">
+                <input [(ngModel)]="productdata.productImg" id="imid" name="p7" type="text" class="form-control mt-2 p-2" placeholder="Product Image">
+                <input [(ngModel)]="productdata.rating" id="ratid" name="p8" type="text" class="form-control mt-2 p-2" placeholder="Rating">
+                <input [(ngModel)]="productdata.review" id="revid" name="p9" type="text" class="form-control mt-2 p-2" placeholder="Reviews">
+                <input [(ngModel)]="productdata.warranty" id="warid" name="p11" type="text" class="form-control mt-2 p-2" placeholder="Warrenty">
+                <button class="btn btn-success mt-2 p-2 mb-3" style="border-radius: 10%;">UPDATE</button>
+            </form>
+    </div>
+    </div>
+    

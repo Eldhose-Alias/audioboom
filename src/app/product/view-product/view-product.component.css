@@ -1,0 +1,27 @@
+
+div .small{
+    padding: 0;
+    line-height: 1.4;
+    font-size: inherit;
+    font-weight: inherit;
+    display: inline-block;
+}
+.w2{
+    background-color: rgba(4, 180, 4, 0.812);
+    color: aliceblue;
+    border: none;
+    border-radius: 10%;
+}
+span{
+    font-size: small;
+}
+.lead{
+    font-size: 37px;
+    font-weight: 500;
+}
+/* .q1{
+    background-color: rgba(234, 250, 4, 0.812);
+    text-align: center;
+    border: none;
+    border-radius: 10%;
+} */

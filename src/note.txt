@@ -1,0 +1,48 @@
+lazy loading techinque
+
+:koduthel traffic varunna page ne load cheyan use cheyane techinque
+
+module creation : "ng g module modulename"
+
+    :lazy loaded module creation -
+
+    "ng g modulename --route modulename --module rootmodulename"
+
+
+    :installing json-server -
+    ........................
+
+        'npm i --save json-server'
+
+        :for running json-server -
+    ..................................
+
+        'npx json-server --watch db.json --port 3000' 
+
+        items           category id
+
+        fashion -       2
+        electronics -   1
+        jewellery -     3
+
+    Access data from component path
+    ..............................
+
+     class used - 'ActivatedRoute'
+
+     method used - params
+
+      pipe creation :-
+      .............
+
+     cmd - "ng g pipe filter"
+
+     Behavior Subject in Angular
+     .........................
+
+      library used: rxjs
+      service:- "ella componentnem orumich call cheyan vendi"
+    
+
+
+     

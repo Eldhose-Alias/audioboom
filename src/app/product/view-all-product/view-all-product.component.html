@@ -1,0 +1,68 @@
+ 
+ <!-- category bar -->
+ <div class="container text-center">
+    <div class="row" style="background-color: rgb(255, 251, 251);">
+        <div class="col-3 p-2">
+            <button style="border: none; background-color: white;">
+            <a (click)="filter('')">
+            <img style="width:96px; margin-left: 7px;" src="https://i.postimg.cc/HnPXVbbT/c3ad1ce285791cf9741f5b8d7a2402a5.jpg" alt="">
+            <h6>All Products</h6>
+            </a>
+        </button>
+        </div>
+        <div class="col-3 p-2">
+            <button style="border: none; background-color: white;">
+            <a (click)="filter(1)">
+            <img style="width:71px; margin-left: 4px;" src="https://i.postimg.cc/W4zdkcYV/s101-ba-4-in-1-combo-4-redragon-original-imafbsryw2y6zdkc.webp" alt="">
+            <h6>OverHead</h6>
+            </a>
+            </button>
+        </div>
+        <div class="col-3 p-2">
+            <button style="border: none; background-color: white;">
+            <a (click)="filter(2)">
+            <img style="width:95px; margin-left: 1px;" src="https://i.postimg.cc/fb1YWbzp/dots-play-ambrane-original-imagbun8yxf79yej.webp" alt="">
+            <h6>Airpods</h6>
+            </a>
+            </button>
+        </div>
+        <div class="col-3 p-2">
+            <button style="border: none; background-color: white;">
+           <a (click)="filter(3)">
+            <img  style="width:79px; margin-left: -4px;" src="https://i.postimg.cc/kgmJCPPs/nb119c-carter-48-hours-playing-time-fast-charging-bluetooth-original-imagh7zhe2nmdmhx.webp" alt="">
+            <h6 >Bluetooth Headsets</h6>
+           </a>
+           </button>
+        </div>
+    </div>
+ </div>
+ <!-- Section-->
+ <section class="py-5" style="background-color: rgb(104, 104, 104);">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div *ngFor="let i of filterproducts | filter:searchkey:'productName'" class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" style="height: 300px;" src="{{i.productImg}}" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{i.productName}}</h5>
+                            <p><strong>{{i.description}}</strong></p>
+                            <!-- <p><strong>{{i.review}}</strong></p> -->
+                            <!-- Product price-->
+                           <p><strong>Rs:{{i.price}}/-</strong></p>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div  class="text-center"><a class="btn btn-success mt-auto" href="product/view-product/{{i.id}}">View options <i class="bi bi-three-dots-vertical"></i></a></div>
+                        <div class="text-center"><a class="btn btn-warning mt-3 text-white"><i class="bi bi-cart-plus-fill"></i>Add Cart</a></div>
+                    </div>
+                </div>
+            </div>
+       </div>
+ </div>
+</section>
+

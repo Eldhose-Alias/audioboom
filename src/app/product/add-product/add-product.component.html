@@ -1,0 +1,18 @@
+<div class="p-5" style="background-color: rgba(159, 157, 157, 0.801);">
+<div class="container w-50 text-center mt-3 p-2">
+    <h1>Add New Product</h1>
+        <form (ngSubmit)="addNewProduct()" [formGroup]="addProductForm" action=" ">
+            <input formControlName="id" id="pid" name="p1" type="text" class="form-control mt-2 p-2" placeholder="Product ID">
+            <input formControlName="productName" id="pname" name="p2" type="text" class="form-control mt-2 p-2" placeholder="Product Name">
+            <input formControlName="categoryId" id="cid" name="p3" type="text" class="form-control mt-2 p-2" placeholder="Category ID">
+            <input formControlName="description" id="did" name="p4" type="text" class="form-control mt-2 p-2" placeholder="Description">
+            <input formControlName="price" id="prid" name="p5"  type="text" class="form-control mt-2 p-2" placeholder="Price">
+            <input formControlName="isAvailable" id="avid" name="p6" type="text" class="form-control mt-2 p-2" placeholder="isAvailable :true/false">
+            <input formControlName="productImg" id="imid" name="p7" type="text" class="form-control mt-2 p-2" placeholder="Product Image">
+            <input formControlName="rating" id="ratid" name="p8" type="text" class="form-control mt-2 p-2" placeholder="Rating">
+            <input formControlName="review" id="revid" name="p8" type="text" class="form-control mt-2 p-2" placeholder="Reviews">
+            <input formControlName="warrenty" id="warid" name="p11" type="text" class="form-control mt-2 p-2" placeholder="Warrenty">
+            <button class="btn btn-success mt-2 p-2 mb-3" style="border-radius: 10%;">ADD PRODUCT</button>
+        </form>
+</div>
+</div>
